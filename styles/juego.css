@@ -1,0 +1,256 @@
+:root{
+    --vo: rgb(24, 83, 73);
+    --voo: rgb(24, 83, 73 , 0.7);
+    --vc:rgb(164, 255, 74) ;
+    --vcc: rgb(164, 255, 74 , 0.4);
+}
+*{
+    margin: 0;
+}
+header{
+    background-image: url("../img/design1_image1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid var(--vo);
+    border-radius: 0 0 3vw 0;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h1{ 
+    font-size: 5vw;
+    margin: 40px 0 0 0;
+    color: rgb(255, 255, 255, 0.7);
+}
+h1:hover{
+    color:var(--vc);
+}
+h2{
+    background-color:var(--voo);
+    color:var(--vc);
+    border-radius: 0 0 2vw 0;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+#logo{
+    height: 120px;  
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+#logo:hover{
+    border-radius: 120px;
+    border:4px solid var(--vcc);
+}
+nav{
+    background-color: var(--voo);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    position: absolute;
+    height: 40px;
+    width: auto;
+    top:0px;
+    right:120px;
+    align-items: stretch;
+}
+nav > *{
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    color:white;
+    padding: 0 5px 0 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+nav > *:hover{
+    background-color:rgba(255, 255, 255, 0.2);
+    color: var(--vc);
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    flex-wrap: wrap;
+}
+main > *{
+    display: block;
+    text-align: center;
+    padding: 20px 40px 0 40px;
+}
+dt{
+    font-size: 3em;
+}
+dd{
+    font-size: 1.5em;
+}
+#cont{
+    font-size: 1.5em;
+}
+caption,thead,tbody,footer{
+    width: 500px;
+    text-align: left;
+}
+#list{
+    text-align: left;
+}
+ol,ul{
+    padding: 10px 0 0 50px;
+}
+ul{
+    list-style-type: square;
+}
+li > ul{
+    list-style-type:circle;
+}
+table{
+    width: 60vw;
+    padding: 0;
+    margin: auto;
+    border-collapse: collapse;
+    display: flex;
+    flex-wrap: wrap;
+}
+table > *{
+    display: block;
+    width: 100vw;
+    font-size: 1.1em;
+    text-align: center;
+}
+thead, tbody{
+    border:1px solid var(--vc);
+}
+caption{
+    border: none;
+    text-align: left;
+    height: 2em;
+}
+#t_table{
+    padding: 20px 0 0 6vw;
+    text-align: left;
+    font-size: 1.6em;
+}
+tr > *{
+    width: 25vw;
+    text-align: center;
+}
+thead > tr{
+    background-color: var(--vc);
+    height: 2em;
+}
+tbody > tr:nth-child(4n-3){
+    background-color: var(--vcc);
+}
+tbody > tr:nth-child(4n-2){
+    background-color: var(--vcc);
+}
+#enc{
+    text-decoration: none;
+}
+.ptabla > span{
+    font-weight: bold;
+}
+#detables{
+    margin-top: 20px;
+}
+.ptabla{
+    text-align: left;
+    font-size: 1em;
+}
+.maps{
+    height: 0.03vh;
+}
+.maps:hover{
+    border: 1px solid var(--vc);
+    width: 15vw;
+    height: 20vh;
+}
+footer{
+    width: 100vw;
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-evenly;
+}
+form{
+    margin: auto;
+    padding: 0;
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+form > *{
+    width: 100vw;
+    margin: 10px 0 0 0;
+}
+.permit{
+    text-align: left;
+    font-size: 0.6em;
+}
+.player{
+    padding: 0 1vw 0 1vw;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.player > label{
+    width: 45vw;
+    margin: 0.5vw;
+    display: flex;
+    justify-content:space-between;
+}
+.player > label >*{
+    width: 28vw;
+}
+.player > div >fieldset {
+    width: 43.3vw;
+}
+.f{
+    width: 10vw;
+}
+#school{
+    width: 20vw;
+}
+form > label{
+    width: 31.4vw;
+    display: flex;
+    justify-content:space-around;
+}
+form > label >*{
+    width: 20vw;
+}
+.check{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.check > input{
+    margin: 0 1vw 0 1vw;
+}
+#cert{
+    width: 5vw;
+}
+#dcert{
+    display: flex;
+    justify-content: flex-start;
+}
+#send{
+    display: flex;
+    justify-content: flex-end;
+}
+#send > input{
+    width: 10vw;
+}
+.rt{
+    width: 50vw;
+}
